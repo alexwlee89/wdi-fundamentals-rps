@@ -48,27 +48,27 @@ function getWinner(playerMove,computerMove) {
     if (computerMove == “rock”) {
         if (playerMove == “rock”) {
             winner = “tie”;
-        if (playerMove == “paper”) {
+        else if (playerMove == “paper”) {
             winner = “win”;
-        if (playerMove == “scissors”) {
+        else (playerMove == “scissors”) {
             winner = “lose”;
     }
 
-    if (computerMove == “paper”) {
+    else if (computerMove == “paper”) {
         if (playerMove == “rock”) {
             winner = “lose”;
-        if (playerMove == “paper”) {
+        else if (playerMove == “paper”) {
             winner = “tie”;
-        if (playerMove == “scissors”) {
+        else (playerMove == “scissors”) {
             winner = “win”;
     }
 
-    if (computerMove == “scissors”) {
+    else {
         if (playerMove == “rock”) {
             winner = “win”;
-        if (playerMove == “paper”) {
+        else if (playerMove == “paper”) {
             winner = “lose”;
-        if (playerMove == “scissors”) {
+        else {
             winner = “tie”;
     }
 
