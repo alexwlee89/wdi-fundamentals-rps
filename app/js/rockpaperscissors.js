@@ -106,7 +106,7 @@ function playToFive() {
 
     while (playerWins < 5 || computerWins < 5) {
         playerMove = getPlayerMove(getInput());
-        computerMove = getComputerMove(getInput());
+        computerMove = getComputerMove(randomPlay());
         winner = getWinner(playerMove, computerMove);
 
         if (winner == "player") {
