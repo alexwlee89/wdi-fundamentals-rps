@@ -44,44 +44,44 @@ function getWinner(playerMove,computerMove) {
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
     
     switch (playerMove) {
-        case “rock”:
-            if (computerMove == “rock”) {
-                winner = “tie”;
-            }
-            else if (computerMove == “paper”) {
-                winner = “computer”;
-            }
-            else (computerMove == “scissors”) {
+        case "rock":
+            if (computerMove == “scissors”) {
                 winner = “player”;
+            }
+            else if (computerMove == "paper") {
+                winner = "computer";
+            }
+            else {
+                winner = “tie”;
             }
             break;
 
-        case “paper”:
-            if (computerMove == “rock”) {
-                winner = “player”;
+        case "paper":
+            if (computerMove == "rock") {
+                winner = "player";
             }
-            else if (computerMove == “paper”) {
-                winner = “tie”;
-            }
-            else (computerMove == “scissors”) {
+            else if (computerMove == “scissors”) {
                 winner = “computer”;
+            }
+            else {
+                winner = “tie”;
             }
             break;
 
-        case “scissors”:
-            if (computerMove == “rock”) {
-                winner = “computer”;
+        case "scissors":
+            if (computerMove == "rock") {
+                winner = "computer";
             }
-            else if (computerMove == “paper”) {
-                winner = “player”;
+            else if (computerMove == "paper") {
+                winner = "player";
             }
-            else (computerMove == “scissors”) {
-                winner = “tie”;
+            else {
+                winner = "tie";
             }
             break;
 
         default:
-            winner = “tie”;
+            winner = "tie";
     }
 
     return winner;
@@ -100,25 +100,25 @@ function playToFive() {
     //  console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
     //  console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
 
-    var playerMove = “”;
-    var computerMove = “”;
-    var winner = “”;
+    var playerMove = "";
+    var computerMove = "";
+    var winner = "";
 
     while (playerWins < 5 || computerWins < 5) {
         playerMove = getPlayerMove(getInput());
         computerMove = getComputerMove(getInput());
         winner = getWinner(playerMove, computerMove);
 
-        if (winner == “player”) {
+        if (winner == "player") {
             playerWins++;
         }
 
-        else if (winner == “computer”) {
+        else if (winner == "computer") {
             computerWins++;
         }
 
-        console.log(“Player chose ” + playerMove);
-        console.log(“Computer chose “ + computerMove);
+        console.log("Player chose " + playerMove);
+        console.log("Computer chose " + computerMove);
         console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
     }
 
