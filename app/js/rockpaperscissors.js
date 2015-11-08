@@ -45,8 +45,8 @@ function getWinner(playerMove,computerMove) {
     
     switch (playerMove) {
         case "rock":
-            if (computerMove == “scissors”) {
-                winner = “player”;
+            if (computerMove == "scissors") {
+                winner = "player";
             }
             else if (computerMove == "paper") {
                 winner = "computer";
@@ -60,8 +60,8 @@ function getWinner(playerMove,computerMove) {
             if (computerMove == "rock") {
                 winner = "player";
             }
-            else if (computerMove == “scissors”) {
-                winner = “computer”;
+            else if (computerMove == "scissors") {
+                winner = "computer";
             }
             else {
                 winner = "tie";
@@ -124,4 +124,3 @@ function playToFive() {
 
     return [playerWins, computerWins];
 }
-
