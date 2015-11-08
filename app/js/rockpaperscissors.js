@@ -52,7 +52,7 @@ function getWinner(playerMove,computerMove) {
                 winner = "computer";
             }
             else {
-                winner = “tie”;
+                winner = "tie";
             }
             break;
 
@@ -64,7 +64,7 @@ function getWinner(playerMove,computerMove) {
                 winner = “computer”;
             }
             else {
-                winner = “tie”;
+                winner = "tie";
             }
             break;
 
